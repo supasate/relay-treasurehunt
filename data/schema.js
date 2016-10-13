@@ -31,7 +31,13 @@ import {
 
 import {
   // Import methods that your schema can use to interact with your database
-
+  Game,
+  HidingSpot,
+  getGame,
+  getHidingSpots,
+  getHidingSpot,
+  getTurnsRemaining,
+  checkHidingSpotForTreasure,
 } from './database';
 
 /**
