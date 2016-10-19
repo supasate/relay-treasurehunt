@@ -1,6 +1,6 @@
 import Relay from 'react-relay'
 
-export defaut class CheckHidingSpotForTreasureMutation extends Relay.Mutation {
+export default class CheckHidingSpotForTreasureMutation extends Relay.Mutation {
   static fragments = {
     game: () => Relay.QL`
       fragment on Game {
@@ -16,7 +16,7 @@ export defaut class CheckHidingSpotForTreasureMutation extends Relay.Mutation {
   }
 
   getMutation() {
-    return Relay.QL`mutation{checkHidiingSpotForTreasure}`
+    return Relay.QL`mutation{checkHidingSpotForTreasure}`
   }
 
   getCollisionKey() {
@@ -25,7 +25,7 @@ export defaut class CheckHidingSpotForTreasureMutation extends Relay.Mutation {
 
   getFatQuery() {
     return Relay.QL`
-      fragment on CheckHidiingSpotForTreasurePayload @relay(pattern: true) {
+      fragment on CheckHidingSpotForTreasurePayload @relay(pattern: true) {
         hidingSpot {
           isChecked,
           hasTreasure,
