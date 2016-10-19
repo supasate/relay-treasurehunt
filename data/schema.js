@@ -110,6 +110,7 @@ const hidingSpotType = new GraphQLObjectType({
         } else {
           return null
         }
+      }
     }
   }),
   interfaces: [nodeInterface],
