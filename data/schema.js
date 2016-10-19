@@ -131,9 +131,9 @@ var queryType = new GraphQLObjectType({
   fields: () => ({
     node: nodeField,
     // Add your own root fields here
-    viewer: {
-      type: userType,
-      resolve: () => getViewer(),
+    game: {
+      type: gameType,
+      resolve: () => getGame(),
     },
   }),
 });
