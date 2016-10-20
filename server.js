@@ -29,6 +29,7 @@ function startAppServer(callback) {
     output: {filename: '/app.js', path: '/', publicPath: '/js/'}
   });
   appServer = new WebpackDevServer(compiler, {
+    devtool: 'source-map',
     contentBase: '/public/',
     proxy: {'/graphql': `http://localhost:${GRAPHQL_PORT}`},
     publicPath: '/js/',
