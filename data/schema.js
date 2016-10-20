@@ -86,6 +86,7 @@ const gameType = new GraphQLObjectType({
     turnsRemaining: {
       type: GraphQLInt,
       description: 'The number of turns a player has left to find the the treasure',
+      resolve: () => getTurnsRemaining(),
     }
   }),
   interfaces: [nodeInterface],
