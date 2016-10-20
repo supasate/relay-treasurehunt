@@ -18,11 +18,12 @@ class App extends React.Component {
     }
 
     return {
-      backgroudColor: color,
+      backgroundColor: color,
       cursor: this._isGameOver() ? null : 'pointer',
       display: 'inline-block',
       height: 100,
       marginRight: 10,
+      width: 100,
     }
   }
 
